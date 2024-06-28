@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheatZone</title>
+    <link rel="stylesheet" href="/views/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>CheatZone</h1>
+            <p>your daily work assistant</p>
+        </div>
+       
+        <div class="main-container">
+            <div class="contact-list">
+                
+                <div class="contact-item active" data-model="Table QA" onclick="selectContact('Table QA')">
+                    <h3>Table Reader</h3>
+                </div>
+                <div class="contact-item" data-model="Chat Me" onclick="selectContact('Chat Me')">
+                    <h3>Chat Me</h3>
+                </div>
+                <div class="contact-item" data-model="Summarization" onclick="selectContact('Summarization')">
+                    <h3>Summarization</h3>
+                </div>
+            </div>
+            <div class="chat-container">
+                <div class="chat-header" id="chat-header">
+                    <h2>Table QA</h2>
+                </div>
+                <div class="chat-box" id="chat-box">
+                    <!-- Chat messages will be inserted here dynamically -->
+                </div>
+                <div class="chat-input-container">
+                    <input type="text" id="chat-input" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
+                    <button onclick="sendMessage()">Send</button>
+                    <input type="file" id="file-input" style="display: none;">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/views/script.js"></script>
+</body>
+</html>
