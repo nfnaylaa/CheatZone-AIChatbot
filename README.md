@@ -1,6 +1,6 @@
 # CheatZone
 
-CheatZone adalah aplikasi web yang meanfaatkan model AI dari [Hugging Face API](https://huggingface.co/). Aplikasi ini mendukung tiga fitur utama:
+CheatZone adalah aplikasi Chat Bot berbasis web yang meanfaatkan model AI dari [Hugging Face API](https://huggingface.co/). Aplikasi ini mendukung tiga fitur utama:
 1. **Table QA**: Menerima file CSV dari pengguna dan memungkinkan pengguna untuk mengajukan pertanyaan mengenai data tersebut. Fitur ini menggunakan model [google/tapas-base-finetuned-wtq](https://huggingface.co/google/tapas-base-finetuned-wtq).
 2. **Summarization**: Merangkum teks yang ditulis di kolom chat oleh pengguna. Fitur ini menggunakan model [Falconsai/text_summarization](https://huggingface.co/Falconsai/text_summarization).
 3. **Chat Me**: Menjawab pertanyaan pengguna mirip seperti ChatGPT. Fitur ini menggunakan model [meta-llama/Meta-Llama-3-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct)
